@@ -698,8 +698,8 @@ main {
   height: 40px;
 }
 .menu-dialog {
-  background: var(--lime);
-  color: var(--forest);
+  background: #173a2a;
+  color: var(--paper);
 }
 
 @media (max-width: 1100px) {

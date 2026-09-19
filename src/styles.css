@@ -263,7 +263,7 @@ section {
   align-items: center;
 }
 .header-quote {
-  background: #fff;
+  background: var(--lime);
   color: var(--forest);
   padding: 17px 23px;
   border-radius: 30px;
@@ -272,6 +272,15 @@ section {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.header-quote:hover {
+  background: var(--forest);
+  color: var(--lime);
 }
 .header-quote span {
   font-size: 18px;
@@ -1235,7 +1244,7 @@ details summary::-webkit-details-marker {
 }
 .menu-dialog {
   border: none;
-  background: var(--forest);
+  background: white;
   color: #173a2a;
   padding: 35px var(--page);
   width: 100vw;
@@ -1283,7 +1292,7 @@ details summary::-webkit-details-marker {
   vertical-align: middle;
 }
 .menu-dialog a:hover {
-  opacity: 0.6;
+  color: var(--lime);
 }
 .menu-bottom {
   display: flex;
