@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#132a13" />
+    <meta
+      name="description"
+      content="Descubre otra forma de habitar la energía. Paneles solares para casas y negocios en Ciudad de México y área metropolitana. Explora tu sistema y calcula una propuesta solar."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="HELIO — El futuro tiene sol." />
+    <meta
+      property="og:description"
+      content="Energía solar, diseñada alrededor de tu vida. Una experiencia solar para Ciudad de México."
+    />
+    <meta property="og:image" content="/images/hero-solar.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-sky.webp"
+      media="(min-width: 641px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-sky-mobile.webp"
+      media="(max-width: 640px)"
+      fetchpriority="high"
+    />
+    <title>HELIO — Energía solar que se vive · CDMX</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "HELIO — Prototipo de energía solar",
+        "inLanguage": "es-MX",
+        "description": "Prototipo conceptual de venta e instalación de paneles solares en Ciudad de México y área metropolitana."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="header">
+      <a class="brand" href="#inicio" aria-label="HELIO, inicio"
+        ><svg class="sun-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="7" />
+          <path
+            d="M20 1v7m0 24v7M1 20h7m24 0h7M6.5 6.5l5 5m17 17 5 5M6.5 33.5l5-5m17-17 5-5"
+          /></svg
+        ><span>helio<span class="brand-period">™</span></span></a
+      >
+      <div class="header-actions">
+        <a class="header-quote" href="#cotizador"
+          >Calcula tu ahorro
+          <span class="button-icon" aria-hidden="true"
+            ><span class="material-symbol" aria-hidden="true"
+              >calculate</span
+            ></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-label="Abrir menú"
+          aria-haspopup="dialog"
+          aria-controls="menu"
+        >
+          <span class="material-symbol" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <dialog
+      class="menu-dialog"
+      id="menu"
+      aria-label="Navegación principal"
+      data-lenis-prevent
+    >
+      <div class="menu-top">
+        <span class="eyebrow">HELIO / EXPLORA</span
+        ><button class="icon-button close-menu" aria-label="Cerrar menú">
+          <span class="material-symbol" aria-hidden="true">close</span>
+        </button>
+      </div>
+      <nav>
+        <a href="#filosofia"><sup>01</sup>Una nueva energía</a
+        ><a href="#recorrido"><sup>02</sup>Tu casa, conectada</a
+        ><a href="#tecnologia"><sup>03</sup>La tecnología</a
+        ><a href="#cotizador"><sup>04</sup>Tu propuesta solar</a
+        ><a href="#contacto"><sup>05</sup>Hablemos</a>
+      </nav>
+      <div class="menu-bottom">
+        Hecho para una ciudad que nunca deja de moverse.<span
+          >19°25′ N · 99°08′ O</span
+        >
+      </div>
+    </dialog>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true">
+          <picture class="hero-layer hero-layer--sky"
+            ><source
+              media="(max-width:640px)"
+              srcset="/images/hero-sky-mobile.webp" />
+            <img
+              src="/images/hero-sky.webp"
+              alt=""
+              width="1672"
+              height="941"
+              fetchpriority="high"
+          /></picture>
+          <picture class="hero-layer hero-layer--house"
+            ><source
+              media="(max-width:640px)"
+              srcset="/images/hero-house-mobile.webp" />
+            <img
+              src="/images/hero-house.webp"
+              alt=""
+              width="1672"
+              height="941"
+              fetchpriority="high"
+          /></picture>
+          <picture class="hero-layer hero-layer--plants"
+            ><source
+              media="(max-width:640px)"
+              srcset="/images/hero-plants-mobile.webp" />
+            <img
+              src="/images/hero-plants.webp"
+              alt=""
+              width="1672"
+              height="941"
+          /></picture>
+        </div>
+        <div class="hero-shade"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <!-- EDITAR AQUÍ: título, párrafo y botones del hero -->
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="little-line"></span> EL CAMBIO EMPIEZA EN TU TECHO
+          </div>
+          <h1 id="hero-title">
+            Paneles solares en<br />Ciudad de México.<br /><span
+              class="solar-word"
+              >Tu energía. Tu decisión.</span
+            >
+          </h1>
+          <p>
+            Tu recibo de luz no tiene por qué seguir creciendo. Diseñamos e
+            instalamos sistemas solares en CDMX y área metropolitana para que tu
+            techo empiece a producir y tú puedas pensar en lo que sigue.
+          </p>
+          <div class="hero-buttons">
+            <a class="button button-lime" href="#cotizador"
+              >Calcula tu ahorro
+              <span class="button-icon" aria-hidden="true"
+                ><span class="material-symbol" aria-hidden="true"
+                  >calculate</span
+                ></span
+              ></a
+            ><a class="button button-secondary" href="#recorrido"
+              >Explora tu casa solar
+              <span class="button-icon" aria-hidden="true"
+                ><span class="material-symbol" aria-hidden="true"
+                  >play_arrow</span
+                ></span
+              ></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="intro section-pad"
+        id="filosofia"
+        aria-labelledby="intro-title"
+      >
+        <div class="section-label">
+          <span>01 — UNA NUEVA ENERGÍA</span
+          ><span class="material-symbol tiny-sun" aria-hidden="true"
+            >wb_sunny</span
+          >
+        </div>
+        <div class="intro-grid">
+          <h2 id="intro-title" data-reveal>
+            Tu techo tiene<br />un <span class="muted">gran futuro.</span>
+          </h2>
+          <div class="intro-copy" data-reveal>
+            <p>
+              Todos los días, la ciudad recibe energía. Es momento de que una
+              parte sea tuya.
+            </p>
+            <p class="body-muted">
+              Diseñamos sistemas solares que se integran a tu espacio, a tus
+              hábitos y a lo que viene. Del primer cálculo al primer kilowatt.
+            </p>
+            <a class="text-link" href="#soluciones"
+              >Energía que va contigo
+              <span class="button-icon" aria-hidden="true"
+                ><span class="material-symbol" aria-hidden="true"
+                  >arrow_forward</span
+                ></span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="benefit-row">
+          <article data-reveal>
+            <span class="line-icon"
+              ><span class="material-symbol" aria-hidden="true"
+                >receipt_long</span
+              ></span
+            >
+            <h3>Un recibo más ligero.</h3>
+            <p>
+              Genera parte de la electricidad que consumes y reduce tu compra de
+              energía.
+            </p>
+          </article>
+          <article data-reveal>
+            <span class="line-icon"
+              ><span class="material-symbol" aria-hidden="true"
+                >solar_power</span
+              ></span
+            >
+            <h3>Tu espacio, con propósito.</h3>
+            <p>
+              Transforma un techo disponible en una fuente de energía para tu
+              día a día.
+            </p>
+          </article>
+          <article data-reveal>
+            <span class="line-icon"
+              ><span class="material-symbol" aria-hidden="true"
+                >energy_savings_leaf</span
+              ></span
+            >
+            <h3>Una decisión a futuro.</h3>
+            <p>
+              Prepara tu hogar para nuevos hábitos, movilidad eléctrica y más
+              posibilidades.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tour-section" id="recorrido" aria-labelledby="tour-title">
+        <div class="tour-sticky">
+          <div class="section-label">
+            <span>02 — TODO ESTÁ CONECTADO</span
+            ><span>EXPERIENCIA INTERACTIVA / 3D</span>
+          </div>
+          <div class="tour-heading">
+            <h2 id="tour-title">
+              Sigue la energía.<br /><span class="muted">Imagina tu casa.</span>
+            </h2>
+            <p>Del primer rayo de sol<br />a tu próximo destino.</p>
+          </div>
+          <div
+            class="tour-stage"
+            id="house-stage"
+            role="img"
+            aria-label="Modelo 3D de una casa con paneles solares, medidor bidireccional y automóvil eléctrico"
+          >
+            <img
+              class="tour-poster"
+              src="/images/hero-solar.webp"
+              alt="Vista de referencia de una casa solar"
+              width="1920"
+              height="1080"
+              loading="lazy"
+            /><span class="scene-loading" role="status"
+              >Preparando tu recorrido…</span
+            >
+          </div>
+          <div class="tour-details">
+            <span class="tour-number" id="tour-number">01 / 04</span>
+            <h3 id="tour-step-title">Que tu recibo deje de decidir por ti.</h3>
+            <p id="tour-step-copy">
+              Sube el recibo y vuelves a hacer cuentas. Imagina que tu casa
+              produzca una parte de la energía que necesita, todos los días.
+            </p>
+            <span class="tour-detail-note" id="tour-step-note"
+              >EL CAMBIO EMPIEZA EN TU PROPIO TECHO</span
+            >
+          </div>
+          <div
+            class="tour-controls"
+            role="group"
+            aria-label="Etapas del recorrido"
+          >
+            <button data-step="0" class="active" aria-pressed="true">
+              <span>01</span> Tu hogar</button
+            ><button data-step="1" aria-pressed="false">
+              <span>02</span> El sol</button
+            ><button data-step="2" aria-pressed="false">
+              <span>03</span> La conexión</button
+            ><button data-step="3" aria-pressed="false">
+              <span>04</span> Tu movilidad
+            </button>
+          </div>
+          <div class="tour-helper">
+            <span class="material-symbol" aria-hidden="true">swipe_down</span>
+            Desliza o elige una etapa <span>MODELO CONCEPTUAL</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="technology" id="tecnologia" aria-labelledby="tech-title">
+        <div class="tech-sticky">
+          <div class="section-label">
+            <span>03 — INGENIERÍA QUE SE SIENTE</span
+            ><span>EXPLORA LO QUE HACE LA DIFERENCIA</span>
+          </div>
+          <div class="tech-content">
+            <span class="eyebrow">TRES PARTES. UN MISMO PROPÓSITO.</span>
+            <h2 id="tech-title">
+              La diferencia está<br /><span>en lo que no ves.</span>
+            </h2>
+          </div>
+          <div
+            class="technology-stage"
+            id="technology-stage"
+            role="img"
+            aria-label="Modelo tridimensional de un módulo fotovoltaico"
+          >
+            <img
+              class="technology-poster"
+              src="/images/panel-detail.webp"
+              alt="Panel fotovoltaico de referencia"
+              width="1672"
+              height="941"
+              loading="lazy"
+            /><span class="technology-loading" role="status"
+              >Preparando los detalles…</span
+            >
+          </div>
+          <div class="tech-caption" aria-live="polite">
+            <span class="tech-chapter" id="tech-chapter">01 / CAPTURA</span>
+            <h3 id="tech-caption-title">De un rayo de sol a tu día a día.</h3>
+            <p id="tech-caption-copy">
+              Las celdas fotovoltaicas convierten la luz en electricidad. La
+              orientación y el diseño ayudan a aprovechar el espacio que ya
+              tienes.
+            </p>
+            <span id="tech-detail" class="eyebrow"
+              >CELDAS + CONEXIONES + MARCO</span
+            >
+          </div>
+          <div
+            class="tech-stops"
+            role="group"
+            aria-label="Capítulos de la tecnología solar"
+          >
+            <button
+              class="tech-stop is-active"
+              data-chapter="0"
+              aria-pressed="true"
+              aria-label="Captura"
+            >
+              <span class="progress-ring" aria-hidden="true"
+                ><svg viewBox="0 0 60 60">
+                  <circle class="ring-track" cx="30" cy="30" r="26" />
+                  <circle
+                    class="ring-fill"
+                    cx="30"
+                    cy="30"
+                    r="26"
+                    pathLength="100"
+                  /></svg
+                ><span>01</span></span
+              ><span class="tech-stop-label"
+                >Captura<small>Aprovecha la luz</small></span
+              ></button
+            ><button
+              class="tech-stop"
+              data-chapter="1"
+              aria-pressed="false"
+              aria-label="Protección"
+            >
+              <span class="progress-ring" aria-hidden="true"
+                ><svg viewBox="0 0 60 60">
+                  <circle class="ring-track" cx="30" cy="30" r="26" />
+                  <circle
+                    class="ring-fill"
+                    cx="30"
+                    cy="30"
+                    r="26"
+                    pathLength="100"
+                  /></svg
+                ><span>02</span></span
+              ><span class="tech-stop-label"
+                >Protección<small>Cuida cada capa</small></span
+              ></button
+            ><button
+              class="tech-stop"
+              data-chapter="2"
+              aria-pressed="false"
+              aria-label="Inteligencia"
+            >
+              <span class="progress-ring" aria-hidden="true"
+                ><svg viewBox="0 0 60 60">
+                  <circle class="ring-track" cx="30" cy="30" r="26" />
+                  <circle
+                    class="ring-fill"
+                    cx="30"
+                    cy="30"
+                    r="26"
+                    pathLength="100"
+                  /></svg
+                ><span>03</span></span
+              ><span class="tech-stop-label"
+                >Inteligencia<small>Entiende tu energía</small></span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="solutions section-pad"
+        id="soluciones"
+        aria-labelledby="solutions-title"
+      >
+        <div class="section-label">
+          <span>04 — A TU MEDIDA</span
+          ><span>EMPECEMOS POR LO QUE NECESITAS</span>
+        </div>
+        <div class="section-heading">
+          <h2 id="solutions-title" data-reveal>
+            Tu vida no es igual a otra.<br /><span class="muted"
+              >Tu sistema tampoco.</span
+            >
+          </h2>
+          <p data-reveal>
+            Elige dónde quieres hacer el cambio.<br />Nosotros te ayudamos a
+            darle forma.
+          </p>
+        </div>
+        <div class="solutions-layout">
+          <div
+            class="solution-tabs"
+            role="tablist"
+            aria-label="Tipo de proyecto"
+            aria-orientation="vertical"
+          >
+            <button
+              role="tab"
+              aria-selected="true"
+              aria-controls="solution-panel"
+              id="solution-home"
+              data-solution="home"
+            >
+              <span class="solution-tab-icon"
+                ><span class="material-symbol" aria-hidden="true"
+                  >home</span
+                ></span
+              ><span class="solution-tab-text"
+                >Tu hogar<small>Tranquilidad en casa</small></span
+              ><span
+                class="material-symbol solution-selected"
+                aria-hidden="true"
+                >check_circle</span
+              ></button
+            ><button
+              role="tab"
+              aria-selected="false"
+              aria-controls="solution-panel"
+              id="solution-business"
+              data-solution="business"
+              tabindex="-1"
+            >
+              <span class="solution-tab-icon"
+                ><span class="material-symbol" aria-hidden="true"
+                  >storefront</span
+                ></span
+              ><span class="solution-tab-text"
+                >Tu negocio<small>Energía para seguir creciendo</small></span
+              ><span
+                class="material-symbol solution-selected"
+                aria-hidden="true"
+                >check_circle</span
+              ></button
+            ><button
+              role="tab"
+              aria-selected="false"
+              aria-controls="solution-panel"
+              id="solution-mobility"
+              data-solution="mobility"
+              tabindex="-1"
+            >
+              <span class="solution-tab-icon"
+                ><span class="material-symbol" aria-hidden="true"
+                  >ev_station</span
+                ></span
+              ><span class="solution-tab-text"
+                >Tu movilidad<small>Carga para lo que viene</small></span
+              ><span
+                class="material-symbol solution-selected"
+                aria-hidden="true"
+                >check_circle</span
+              >
+            </button>
+          </div>
+          <div
+            class="solution-panel"
+            id="solution-panel"
+            role="tabpanel"
+            aria-labelledby="solution-home"
+            tabindex="0"
+          >
+            <div class="solution-image">
+              <img
+                id="solution-image"
+                src="/images/hero-solar.webp"
+                alt="Casa contemporánea con paneles solares y jardín en Ciudad de México"
+                width="1672"
+                height="941"
+                loading="lazy"
+              /><span class="solution-image-label"
+                >UNA SOLUCIÓN PARA TU FORMA DE VIVIR</span
+              >
+            </div>
+            <div class="solution-info">
+              <span class="eyebrow" id="solution-tag">PARA TU HOGAR</span>
+              <h3 id="solution-title">Más tranquilidad al abrir tu recibo.</h3>
+              <p id="solution-copy">
+                Tu casa no consume como todas las demás. Partimos de tus
+                hábitos, tu recibo y tu techo para diseñar un sistema que tenga
+                sentido para ti.
+              </p>
+              <ul id="solution-points">
+                <li>Un sistema acorde a tu consumo</li>
+                <li>Integración con la arquitectura</li>
+                <li>Acompañamiento de principio a fin</li>
+              </ul>
+              <a class="button button-dark" href="#cotizador"
+                >Encuentra tu sistema
+                <span class="button-icon" aria-hidden="true"
+                  ><span class="material-symbol" aria-hidden="true"
+                    >calculate</span
+                  ></span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="process section-pad"
+        id="proceso"
+        aria-labelledby="process-title"
+      >
+        <div class="section-label">
+          <span>05 — UN CAMINO CLARO</span><span>DE LA IDEA A LA ENERGÍA</span>
+        </div>
+        <div class="process-layout">
+          <div class="process-intro">
+            <h2 id="process-title" data-reveal>
+              Nos encargamos<br />de lo complejo.<br /><span
+                >Disfruta lo simple.</span
+              >
+            </h2>
+            <p>Un proyecto acompañado,<br />de principio a sol.</p>
+            <div class="process-orbit" aria-hidden="true"><span>h.</span></div>
+          </div>
+          <div class="process-steps">
+            <details open>
+              <summary>
+                <span>01</span>
+                <h3>Escuchamos y analizamos</h3>
+                <span class="material-symbol expand-icon" aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Revisamos tu recibo, tu ubicación y tus planes. Entender cuánto
+                consumes es el inicio de un buen diseño.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span>02</span>
+                <h3>Diseñamos para tu espacio</h3>
+                <span class="material-symbol expand-icon" aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Evaluamos sombras, orientación, superficie y estructura.
+                Definimos equipos, distribución y una propuesta transparente.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span>03</span>
+                <h3>Instalamos con cuidado</h3>
+                <span class="material-symbol expand-icon" aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Montaje, protecciones y conexión eléctrica con personal
+                calificado. El alcance y el calendario se acuerdan antes de
+                empezar.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span>04</span>
+                <h3>Conectamos y acompañamos</h3>
+                <span class="material-symbol expand-icon" aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Te orientamos en la interconexión aplicable con CFE, la puesta
+                en marcha y el monitoreo de tu generación.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="projects section-pad"
+        id="inspiracion"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-label">
+          <span>06 — IMAGINA LO POSIBLE</span
+          ><span>ARQUITECTURA + ENERGÍA</span>
+        </div>
+        <div class="section-heading">
+          <h2 id="projects-title" data-reveal>
+            Se ve bien.<br /><span class="muted">Se vive mejor.</span>
+          </h2>
+          <p data-reveal>
+            La tecnología encuentra su lugar.<br />Tu vida sigue siendo
+            protagonista.
+          </p>
+        </div>
+        <div class="project-image-wrap">
+          <img
+            src="/images/hero-solar.webp"
+            alt="Concepto arquitectónico de una residencia con energía solar integrada, jardín y materiales naturales"
+            width="1920"
+            height="1080"
+            loading="lazy"
+          />
+          <div class="project-caption">
+            <div>
+              <span class="eyebrow">HABITAR EL FUTURO / 001</span>
+              <h3>La casa que mira al sol.</h3>
+            </div>
+            <span class="project-pill">Concepto residencial</span>
+          </div>
+        </div>
+        <div class="project-footnote">
+          <span>CDMX · DISEÑO RESIDENCIAL CONTEMPORÁNEO</span
+          ><span
+            >Visualización conceptual generada con IA. No representa una
+            instalación realizada.</span
+          >
+        </div>
+      </section>
+
+      <section
+        class="quote-section section-pad"
+        id="cotizador"
+        aria-labelledby="quote-title"
+      >
+        <div class="section-label">
+          <span>07 — PONLE NÚMEROS AL CAMBIO</span
+          ><span>SIN REGISTROS. SIN COMPLICACIONES.</span>
+        </div>
+        <div class="section-heading">
+          <h2 id="quote-title" data-reveal>
+            Tu próxima energía<br /><span class="muted">empieza aquí.</span>
+          </h2>
+          <p data-reveal>
+            Explora una estimación inicial<br />y llévatela en un PDF.
+          </p>
+        </div>
+        <div id="estimator">
+          <p class="calculator-loading" role="status">
+            Preparando tu cotizador…
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="faq section-pad"
+        id="preguntas"
+        aria-labelledby="faq-title"
+      >
+        <div class="section-label">
+          <span>08 — HABLEMOS CLARO</span
+          ><span>BUENAS PREGUNTAS. MEJORES DECISIONES.</span>
+        </div>
+        <div class="faq-layout">
+          <h2 id="faq-title" data-reveal>
+            Todo empieza<br />con una<br />
+            <span class="muted">buena pregunta.</span>
+          </h2>
+          <div class="faq-list">
+            <details>
+              <summary>
+                ¿Mi casa es candidata para paneles solares?<span
+                  class="material-symbol expand-icon"
+                  aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Depende de tu consumo, el área disponible, las sombras, la
+                orientación y el estado de la estructura. El cotizador es un
+                primer acercamiento; la viabilidad se confirma con una revisión
+                técnica.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Qué pasa cuando está nublado?<span
+                  class="material-symbol expand-icon"
+                  aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Los paneles pueden producir con luz difusa, aunque la generación
+                disminuye. En un sistema interconectado, la red suministra la
+                energía que haga falta.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Tendré electricidad si se va la luz?<span
+                  class="material-symbol expand-icon"
+                  aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Un sistema convencional conectado a la red se apaga durante un
+                corte por seguridad. Para respaldo necesitas baterías, un
+                inversor compatible y un diseño específico; no se incluyen en
+                esta estimación.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Cómo funciona la conexión con CFE?<span
+                  class="material-symbol expand-icon"
+                  aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                Requiere una solicitud y el contrato de interconexión aplicable.
+                En medición neta se considera la energía que entregas y recibes
+                de la red según las condiciones del contrato. Consulta la
+                <a
+                  href="https://www.cfe.gob.mx/industria/nuevocontrato/Pages/contratos-de-interonexion.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >información oficial de CFE</a
+                >.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿El precio del cotizador es definitivo?<span
+                  class="material-symbol expand-icon"
+                  aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                No. Es un rango ilustrativo para este prototipo, con supuestos
+                visibles. Una cotización formal requiere validar consumos,
+                tarifa, equipos, condiciones del techo, distancias y trabajos
+                adicionales.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Atienden fuera de Ciudad de México?<span
+                  class="material-symbol expand-icon"
+                  aria-hidden="true"
+                  >add</span
+                >
+              </summary>
+              <p>
+                La propuesta de cobertura contempla Ciudad de México y área
+                metropolitana del Estado de México. La disponibilidad y el
+                alcance se confirmarían al revisar la ubicación del proyecto.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer-reveal" id="contacto">
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div>
+            <span class="eyebrow">EL SIGUIENTE PASO ES TUYO</span>
+            <h2>Hagamos<br />que <span>pase.</span></h2>
+            <p>Cuéntanos qué tienes en mente.<br />Empecemos a darle forma.</p>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <label
+                >Tu nombre<input
+                  name="name"
+                  autocomplete="name"
+                  required
+                  maxlength="100"
+                  placeholder="¿Cómo te llamas?" /></label
+              ><label
+                >Correo electrónico<input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  maxlength="254"
+                  placeholder="hola@tucorreo.com"
+              /></label>
+            </div>
+            <label
+              >Tu proyecto<textarea
+                name="message"
+                rows="2"
+                required
+                minlength="10"
+                maxlength="2000"
+                placeholder="Una casa, un negocio, una idea…"
+              ></textarea>
+            </label>
+            <div class="honeypot" aria-hidden="true">
+              <label
+                >No llenar<input
+                  name="company_url"
+                  tabindex="-1"
+                  autocomplete="off"
+              /></label>
+            </div>
+            <label class="privacy-checkbox"
+              ><input type="checkbox" name="consent" required /><span
+                >He leído el
+                <button
+                  type="button"
+                  class="inline-button"
+                  data-legal="privacy"
+                >
+                  aviso de privacidad</button
+                >.</span
+              ></label
+            ><button
+              type="submit"
+              class="button button-lime"
+              id="contact-submit"
+            >
+              Preparar mi solicitud<span class="button-icon" aria-hidden="true"
+                ><span class="material-symbol" aria-hidden="true"
+                  >download</span
+                ></span
+              >
+            </button>
+            <p class="contact-note" id="contact-note">
+              Modo demostración: tu solicitud se descarga en tu dispositivo; no
+              se envía a una empresa.
+            </p>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+        <div class="footer-links">
+          <a href="#inicio" class="brand"
+            ><svg class="sun-mark" viewBox="0 0 40 40" aria-hidden="true">
+              <circle cx="20" cy="20" r="7" />
+              <path
+                d="M20 1v7m0 24v7M1 20h7m24 0h7M6.5 6.5l5 5m17 17 5 5M6.5 33.5l5-5m17-17 5-5"
+              /></svg
+            ><span>helio<small>™</small></span></a
+          >
+          <nav aria-label="Enlaces del pie">
+            <a href="#filosofia">Nuestra visión</a
+            ><a href="#recorrido">Experiencia 3D</a
+            ><a href="#soluciones">Soluciones</a
+            ><a href="#proceso">Cómo funciona</a
+            ><a href="#cotizador">Cotizador solar</a
+            ><a href="#preguntas">Preguntas frecuentes</a>
+          </nav>
+          <div class="footer-place">
+            CIUDAD DE MÉXICO<br />Y ÁREA METROPOLITANA<span
+              >La energía de un nuevo día.</span
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year">2026</span> HELIO. Marca ficticia · Prototipo
+            conceptual.</span
+          >
+          <div>
+            <button data-legal="privacy">Privacidad</button
+            ><button data-legal="terms">Términos</button
+            ><button data-legal="cookies">Cookies</button
+            ><a href="#inicio" aria-label="Volver al inicio"
+              ><span class="material-symbol" aria-hidden="true"
+                >arrow_upward</span
+              ></a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <dialog
+      class="legal-dialog"
+      id="legal-dialog"
+      aria-labelledby="legal-title"
+      data-lenis-prevent
+    >
+      <button class="icon-button legal-close" aria-label="Cerrar información">
+        <span class="material-symbol" aria-hidden="true">close</span></button
+      ><span class="eyebrow">HELIO / INFORMACIÓN</span>
+      <h2 id="legal-title"></h2>
+      <div id="legal-body"></div>
+    </dialog>
+    <noscript
+      ><div class="noscript-note">
+        Puedes explorar toda la información. Activa JavaScript para usar el
+        recorrido 3D y descargar tu cotización.
+      </div></noscript
+    >
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

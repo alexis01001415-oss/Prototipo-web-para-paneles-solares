@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.local
+tmp/
+.sites-runtime/
+output/*.zip
+output/acceso-movil.txt
+acceso-movil.html
+.DS_Store
+Thumbs.db

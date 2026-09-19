@@ -1,0 +1,14 @@
+import { mkdir, writeFile } from 'node:fs/promises';
+const names = ['add','arrow_forward','arrow_upward','calculate','check','check_circle','close','download','electric_car','energy_savings_leaf','ev_station','home','menu','open_in_new','play_arrow','receipt_long','solar_power','storefront','swipe_down','trending_down','verified','wb_sunny'].sort();
+const url = `https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=${names.join(',')}&display=block`;
+const response = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' } });
+if (!response.ok) throw new Error(`Google Fonts: ${response.status}`);
+const css = await response.text();
+const match = css.match(/url\((https:\/\/[^)]+)\)/);
+if (!match) throw new Error('No se encontró la fuente de símbolos.');
+const font = await fetch(match[1]);
+if (!font.ok) throw new Error(`Descarga: ${font.status}`);
+await mkdir('public/fonts', { recursive: true });
+await writeFile('public/fonts/material-symbols-subset.woff2', Buffer.from(await font.arrayBuffer()));
+await writeFile('public/fonts/MATERIAL-SYMBOLS-LICENSE.txt', await (await fetch('https://raw.githubusercontent.com/google/material-design-icons/master/LICENSE')).text());
+console.log(`Material Symbols: ${names.length} iconos oficiales guardados localmente.`);
