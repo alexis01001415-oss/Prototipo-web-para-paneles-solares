@@ -45,6 +45,14 @@ Durante esta iteración, el enlace del teléfono es [http://192.168.100.84:5174/
 
 El enlace funciona dentro de esa red, con la PC encendida y el servidor abierto. No es una publicación pública ni necesita abrir puertos del router. Si Windows solicita acceso de Node a la red, habilítalo para la red privada de confianza. Las redes de invitados o algunas VPN pueden impedir que el teléfono vea la PC.
 
+## Publicación automática en GitHub Pages
+
+El repositorio incluye un flujo en `.github/workflows/ci.yml`. Cada `push` a `main` ejecuta las pruebas, compila el proyecto y publica `dist/` en GitHub Pages. La dirección configurada es:
+
+**https://alexis01001415-oss.github.io/Prototipo-web-para-paneles-solares/**
+
+`VITE_BASE_PATH` conserva las rutas de imágenes, fuentes y módulos cuando el sitio vive dentro de la carpeta del repositorio. GitHub Pages sólo está disponible en este plan cuando el repositorio es público; hacer público el repositorio también permite ver y descargar su código y recursos.
+
 ## Qué contiene
 
 - Hero con capas fotográficas independientes de cielo, casa y vegetación; versiones de imágenes para móvil y parallax a distintas velocidades. Incluye copy local de CDMX, dos llamadas a la acción y un header simplificado.

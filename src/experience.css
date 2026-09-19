@@ -87,6 +87,9 @@ main {
   background: none;
 }
 .header-quote {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   padding: 7px 8px 7px 22px;
   min-height: 52px;
   gap: 24px;

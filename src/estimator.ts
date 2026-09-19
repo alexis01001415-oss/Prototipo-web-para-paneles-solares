@@ -117,7 +117,7 @@ export function mountEstimator(element: HTMLElement): void {
       </form>
       <div class="estimator-result">
         <div class="estimator-result-top"><span><i aria-hidden="true"></i> TU ESCENARIO SOLAR</span><span>01 — 02</span></div>
-        <div class="estimator-panel-visual" aria-hidden="true"><img src="/images/panel-detail.webp" alt="" width="180" height="95" loading="lazy"/><span>DISEÑADO ALREDEDOR DE TI</span></div>
+        <div class="estimator-panel-visual" aria-hidden="true"><img src="${import.meta.env.BASE_URL}images/panel-detail.webp" alt="" width="180" height="95" loading="lazy"/><span>DISEÑADO ALREDEDOR DE TI</span></div>
         <div class="estimator-saving"><p>Ahorro anual ilustrativo en energía</p><strong data-savings>$18,796 – $22,800</strong><span>MXN / año</span></div>
         <div class="estimator-stats"><div><strong data-panel-count>7</strong><span>paneles de 585 W</span></div><div><strong data-power>4.10 <small>kWp</small></strong><span>capacidad instalada</span></div><div><strong data-coverage>92–100<small>%</small></strong><span>del consumo anual*</span></div></div>
         <div class="estimator-price"><span>Presupuesto ilustrativo</span><strong data-price>$104,090 – $132,660</strong></div>

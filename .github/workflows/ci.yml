@@ -1,6 +1,7 @@
 name: Verificar proyecto
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
@@ -8,10 +9,19 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
+    env:
+      VITE_SITE_URL: https://alexis01001415-oss.github.io/Prototipo-web-para-paneles-solares
+      VITE_BASE_PATH: /Prototipo-web-para-paneles-solares/
     steps:
       - name: Descargar el código
         uses: actions/checkout@v4
@@ -30,3 +40,25 @@ jobs:
 
       - name: Compilar el sitio
         run: npm run build
+
+      - name: Preparar GitHub Pages
+        if: github.event_name == 'push'
+        uses: actions/configure-pages@v5
+
+      - name: Empaquetar GitHub Pages
+        if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name == 'push'
+    needs: test-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

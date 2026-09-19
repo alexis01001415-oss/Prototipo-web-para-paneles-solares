@@ -1,4 +1,6 @@
 /** TEXTOS INTERACTIVOS. Cambia solamente el contenido entre comillas. */
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export const tourSteps = [
   {
     title: "Que tu recibo deje de decidir por ti.",
@@ -48,7 +50,7 @@ export const solutions = {
     tag: "PARA TU HOGAR",
     title: "Más tranquilidad al abrir tu recibo.",
     copy: "Tu casa no consume como todas las demás. Partimos de tus hábitos, tu recibo y tu techo para diseñar un sistema que tenga sentido para ti.",
-    image: "/images/hero-solar.webp",
+    image: asset("images/hero-solar.webp"),
     alt: "Casa contemporánea con paneles solares y jardín en Ciudad de México",
     points: [
       "Un sistema acorde a tu consumo",
@@ -60,7 +62,7 @@ export const solutions = {
     tag: "PARA TU NEGOCIO",
     title: "Que tu techo también trabaje.",
     copy: "Cuando tu negocio está en movimiento, el sol también. Aprovecha las horas de operación para generar parte de la electricidad que necesitas.",
-    image: "/images/solution-business.webp",
+    image: asset("images/solution-business.webp"),
     alt: "Paneles solares instalados en la azotea de un espacio comercial contemporáneo",
     points: [
       "Análisis de tu operación diurna",
@@ -72,7 +74,7 @@ export const solutions = {
     tag: "PARA TU MOVILIDAD",
     title: "Carga tu auto. Cambia tu rutina.",
     copy: "Llegar, conectar y seguir con tu día. Combina un cargador compatible con una instalación solar preparada para tus trayectos y horarios.",
-    image: "/images/solution-mobility.webp",
+    image: asset("images/solution-mobility.webp"),
     alt: "Automóvil eléctrico conectado a un cargador en una cochera residencial contemporánea",
     points: [
       "Cargador compatible con tu auto",
